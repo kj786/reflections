@@ -1,20 +1,37 @@
 What happens when you initialize a repository? Why do you need to do it?
 	A hidden directory is created.
 	To initialize a repository for your commits of a new project.
-	
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+	Staging area is a virtual area whereas the other two are physical locations.
+	It aids as an intermediary step before consolidating the tracking of a file to the repository as a new commit.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	By using git diff --staged, you compare staging area to latest commit in the repository from which you can assert that you truly are commiting what you want to commit.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	When you decide to move away from the original intent of the game to a new intent such as:
+	-changing mode of difficulty
+	-language support
+	Branches helps to separate what conceptually speaking ought to be different instances of the same project.
 
 How do the diagrams help you visualize the branch structure?
+	By seeing them visually represented as a sequence of parental nodes. It enables one to see in an instance where two branches eventually meet and where they eventually may merge.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
-
+	The result of the merging process is the assimilation of one branch in the master branch.
+	The representation visualizes the two parents of the newly merged node.
+	
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+	AUTO
+		Pro: Quick and easy
+		Neg: Unresolvable conflicts are dealt with by program
+	MAN
+		Pro: Programmer can assert that the merges are done correctly
+		Neg: -Human error
+			 -Slower in cases of resolvable conflicts
