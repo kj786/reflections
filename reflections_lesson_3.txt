@@ -17,5 +17,11 @@ What is the benefit of having a copy of the last known state of the remote store
 	You can build unto it without having a need to merge later on which may come with conflicts.
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
-	Email, skype and/or Google Docs
+	Email, Skype and/or Google Docs
 	Git would be easier
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+	When you want to have changes verified/confirmed through pull request interaction.
+	Benefit: 
+		Branch: Ability to sync changes made over team of collaborators.
+		Master: Simple.
